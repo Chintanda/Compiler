@@ -49,22 +49,22 @@ public enum TokenType {
     ENDIF(39),
     BEGIN(40),
     ENDDO(41),
+    RETURN(42),
+    INT(43),
+    FLOAT(44),
     //user-defined identifiers(), integer and float literals
-    ID(42),
-    INTLIT(43),
-    FLOATLIT(44),
+    ID(45),
+    INTLIT(46),
+    FLOATLIT(47),
     /*
      * These are not real TokenTypes(), but they are useful to represent states
      */
-    INITIAL(45),
-    ZERO(46),
-    ERROR(47),
-    COMMENTin(48),
-    COMMENTout(49),
-    INVALIDCHAR(50),
-    INVALIDID(51),
-    LEADZERO(52),
-    FINAL(53);
+    INITIAL(-1),
+    ZERO(-1),
+    ERROR(-1),
+    COMMENTin(-1),
+    COMMENTout(-1),
+    FINAL(-1);
 
     public final int id;
 

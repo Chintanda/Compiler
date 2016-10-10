@@ -84,6 +84,9 @@ public class TigerScanner {
         put("endif",TokenType.ENDIF);
         put("begin",TokenType.BEGIN);
         put("enddo",TokenType.ENDDO);
+        put("return", TokenType.RETURN);
+        put("int",TokenType.INT);
+        put("float",TokenType.FLOAT);
     }};
     /*
      * Constructor

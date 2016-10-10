@@ -3,9 +3,9 @@
  */
 public class key {
     int x = 0;
-    int y = 0;
+    TokenType y;
 
-    public key(int x, int y){
+    public key(int x, TokenType y){
         this.x = x;
         this.y = y;
     }
@@ -20,6 +20,6 @@ public class key {
 
     @Override
     public int hashCode() {
-        return (x << 16) + y;
+        return (x << 16) + y.id;
     }
 }
